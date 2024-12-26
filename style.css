@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #333;
+    line-height: 1.5;
+    background-image: url("abstract-wall-wave-architecture-black-background-black-background-presentation-portfolio-website_41204-2021.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the image during scroll */
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+header {
+    background: #333;
+    color: #FFD700;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Menu Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    /* position: sticky; */
+    top: 0;
+    z-index: 10;
+    text-align: right;
+}
+
+nav a {
+    color: #00b7ff;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+
+nav a:hover {
+    background: #39FF14;
+}
+a {
+    color: rgb(4, 179, 248);
+}
+
+/* Main Layout */
+.main-layout {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+.main-layout h2{
+    color: #00b7ff;
+}
+
+.content {
+    flex: 2;
+}
+
+#counter-section {
+    display: flex;
+    justify-content: space-around;
+    
+
+    text-align: center;
+    
+  }
+  .counter {
+    width: 100%;
+    
+    
+  }
+  .counter h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #ffd001;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .counter p {
+    font-size: 25px;
+    color: #ffd001;
+
+  }
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-top: 1rem;
+    }
+
+
+}
