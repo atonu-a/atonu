@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -22,16 +23,24 @@ header {
     padding: 1rem 0;
     text-align: center;
 }
+.section {
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
 
 /* Menu Bar */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background: #444;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 10;
-    text-align: right;
+    text-align: left;
+
 }
 
 nav a {
