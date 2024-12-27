@@ -16,13 +16,7 @@ body {
 h1{
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Header */
-header {
-    background: #333;
-    color: #FFD700;
-    padding: 1rem 0;
-    text-align: center;
-}
+
 .section {
     
     justify-content: center;
@@ -48,6 +42,8 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     transition: background 0.3s;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -56,6 +52,8 @@ nav a:hover {
 }
 a {
     color: rgb(4, 179, 248);
+    text-decoration: none;
+
 }
 
 /* Main Layout */
@@ -63,6 +61,8 @@ a {
     display: flex;
     align-items: flex-start;
     padding: 2rem;
+
+    padding-top: 50px;
     gap: 2rem;
 }
 .main-layout h2{
@@ -71,6 +71,8 @@ a {
 
 .content {
     flex: 2;
+    height: 100%;
+    
 }
 
 #counter-section {
@@ -87,7 +89,7 @@ a {
     
   }
   .counter h2 {
-    font-size: 48px;
+    font-size: 60px;
     margin: 0;
     color: #ffd001;
     font-family: Arial, Helvetica, sans-serif;
