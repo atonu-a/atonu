@@ -1,123 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Atonu Roy Chowdhury, a Computer Science student and aspiring developer interested in game development and problem-solving.">
-    <title>Atonu Roy Chowdhury</title>
-    <link rel="stylesheet" href="style.css">
-    
-<body>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#Career">Career</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #333;
+    line-height: 1.5;
+    background-image: url("abstract-wall-wave-architecture-black-background-black-background-presentation-portfolio-website_41204-2021.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+}
 
-    <div class="main-layout">
-        <div class="content">
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background: #444;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    text-align: left;
+}
+
+nav a {
+    color: #00b7ff;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background: #39FF14;
+}
+
+a {
+    color: rgb(4, 179, 248);
+    text-decoration: none;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    padding: 2rem;
+    padding-top: 50px;
+    gap: 2rem;
+}
+
+.main-layout h2 {
+    color: #00b7ff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+#counter-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.counter {
+    width: 100%;
+}
+
+.counter h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #ffd001;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.counter p {
+    font-size: 25px;
+    color: #ffd001;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
 
 
-            <!-- Home Section -->
-            <section id="home">
-                <h2>Home</h2>
-                <p>Hello, my name is <span style="font-size: 40px; color: aquamarine; font-weight: bolder; ">Atonu Roy Chowdhury</span>. Welcome to my portfolio website! I am a Computer Science student pursuing a diploma in Computer Science and Technology at Jashore Polytechnic Institute. I'm a <span style="font-size: 40px; font-weight: bold; color: aquamarine;">Game developer</span> and a <span style="font-size: 40px; font-weight: bold; color: aquamarine;">3D Artist</span>. Along with development, I also solve problems on various websites like <span style="font-weight: bold; color: aquamarine;">HackerRank</span>, <span style="font-weight: bold; color: aquamarine;">LeetCode</span> and others.</p>
-                <div id="counter-section">
-                    <div class="counter">
-                      <h2><span class="count" data-target="2">0</span>+</h2>
-                      <p>Years of Experience</p>
-                    </div>
-                    <div class="counter">
-                      <h2><span class="count" data-target="300">0</span>+</h2>
-                      <p>Problems Solved on LeetCode and HackerRank</p>
-                    </div>
-                  </div>
-        </section>
 
-
-            <!-- Skills Section -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <p style="color:yellowgreen">Fontend Technologies </p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    
-                </ul>
-                <p style="color:yellowgreen">Prgramming Languages</p>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                </ul>
-                <p style="color:yellowgreen">Game Engines and Modeling Softwares</p>
-                <ul>
-                    <li>Unity</li>
-                    <li>Unreal</li>
-                    <li>Blendar-3D</li>
-                </ul>
-            </section>
-
-
-
-            <!-- Career Section -->
-            <section id="Career">
-                <h2>Career</h2>
-                <b style="color:yellowgreen">1. Academic Results : </b>
-                <p><span style="color: bisque;">SSC</span> : GPA 5.00</p>
-                <p><span style="color: bisque;">diploma</span> : </p>
-                <p>1st Semester: GPA 3.75</p>
-                <p>2nd Semester: GPA 3.83</p>
-                <p>3rd Semester: GPA 3.79</p>
-                <p>4th-8th Semesters: Results Pending</p>
-                <b style="color:yellowgreen">2. Certificates</b>
-                <ul>
-                    <li>Java Skill Certificates</li>
-                    <img src="Programming_Hero_Certificate_java_fundamental (2).jpg" width="525" height="400" alt="Atonu">
-                    <img src="Screenshot 2024-12-25 183353.png" width="525" height="400" alt="Atonu">
-                    <li>Python Skill Certificate</li>
-                    <img src="Programming_Hero_Certificate_python_fundamental.jpg" width="525" height="400" alt="Atonu">
-                </ul>
-            </section>
-
-
-            <!-- Projects Section -->
-            <section id="projects">
-                <h2>Projects</h2>
-                <b style="color:yellowgreen">Games and websites</b>
-                <ul>
-                    <li>3D Car Racing</li>
-                    <li>Zero Hour - The Ultimate BattleGround (Under development)</li>
-                    <li>Personal website</li>
-                </ul>
-                    
-                    Stay tuned for updates on my upcoming projects!</p>
-            </section>
-
-
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:atonu734432@gmail.com" target="_blank" rel="noopener noreferrer">atonu734432@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/atonuroychowdhury/" target="_blank" rel="noopener noreferrer">Atonu Roy Chowdhury</a></p>
-                <p>GitHub: <a href="https://github.com/atonu-a" target="_blank" rel="noopener noreferrer">atonu-a</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/atonu.roychowdhury.1" target="_blank" rel="noopener noreferrer">Atonu Roy Chowdhury</a></p>
-                <p>Address : <Address>Kastobhanga, Kaliganj, Jhenaidah, Khulna, Bangladesh</Address></p>
-            </section>
-        </div>
-
-    
-        <!-- Personal image -->
-        <div class="image">
-            <img src="20241225_232643.png" alt="Atonu Roy Chowdhury">
-        </div>
-          <script src="script.js"></script>
-    </div>
-</body>
-</html>
